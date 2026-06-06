@@ -1,0 +1,49 @@
+[
+  {
+    "version": "v2.4",
+    "date": "Jun 2025",
+    "title": "Auto Logger + Artist Management",
+    "changes": [
+      { "type": "new", "text": "Auto logger — scans Drive every 5 min, posts songs automatically" },
+      { "type": "new", "text": ",artist remove — deletes artist category + all channels" },
+      { "type": "new", "text": ",artist log — view per-artist event history" },
+      { "type": "new", "text": "Artist log files saved to /data/artist_logs/*.json" },
+      { "type": "fix", "text": "Duplicate forum creation fixed with fresh channel cache" },
+      { "type": "fix", "text": "Era detection now skips Spotify / Apple Music format folders" }
+    ]
+  },
+  {
+    "version": "v2.3",
+    "date": "Jun 2025",
+    "title": "Google Drive Integration",
+    "changes": [
+      { "type": "new", "text": ",addsong | #forum | Drive/Path — add songs directly from Drive" },
+      { "type": "new", "text": "MP3 + M4A dual download buttons per post" },
+      { "type": "new", "text": "Dupe logger prevents songs from being posted twice" },
+      { "type": "new", "text": ",drivesync full — fetches full audio metadata via mutagen" },
+      { "type": "fix", "text": "Removed Catbox dependency — direct Drive download links" }
+    ]
+  },
+  {
+    "version": "v2.2",
+    "date": "Jun 2025",
+    "title": "Status Channel + Auto DriveSync",
+    "changes": [
+      { "type": "new", "text": "All status updates routed to a dedicated Discord channel" },
+      { "type": "new", "text": "Hourly Drive re-index task runs automatically" },
+      { "type": "new", "text": "Sync progress embed updates every 2 minutes" },
+      { "type": "fix", "text": "Console spam removed — everything through Discord embeds now" }
+    ]
+  },
+  {
+    "version": "v2.1",
+    "date": "Jun 2025",
+    "title": "Core Bot Launch",
+    "changes": [
+      { "type": "new", "text": "Local Files forum sync system" },
+      { "type": "new", "text": "Real-time thread mirroring via on_thread_create" },
+      { "type": "new", "text": ",addsong with file attachment support" },
+      { "type": "new", "text": "Per-guild artist setup with category + forum creation" }
+    ]
+  }
+]

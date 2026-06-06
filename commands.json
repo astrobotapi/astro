@@ -1,0 +1,50 @@
+[
+  {
+    "group": "LocalFiles",
+    "icon": "📂",
+    "commands": [
+      { "name": ",lf setup",                 "desc": "Set up an artist — creates category, forums, and syncs threads.", "perm": "admin" },
+      { "name": ",lf set on/off",            "desc": "Enable or disable Local Files for this server.", "perm": "admin" },
+      { "name": ",lf remove <artist>",       "desc": "Remove an artist's data from the bot.", "perm": "admin" },
+      { "name": ",lf sync <artist>",         "desc": "Re-sync all threads for a specific artist.", "perm": "admin" },
+      { "name": ",lf syncall",               "desc": "Re-sync all active artists at once.", "perm": "admin" },
+      { "name": ",lf status",                "desc": "Show active artists, forum counts, and synced thread counts.", "perm": "admin" },
+      { "name": ",lf addartist <id> <name>", "desc": "Temporarily add a new artist with a Drive category ID.", "perm": "admin" }
+    ]
+  },
+  {
+    "group": "AddSong",
+    "icon": "🎵",
+    "commands": [
+      { "name": ",addsong #forum",                      "desc": "Attach an MP3 or M4A file and post it as a forum thread.", "perm": "owner" },
+      { "name": ",addsong | tag | #forum",              "desc": "Same as above but applies a forum tag to the thread.", "perm": "owner" },
+      { "name": ",addsong | #forum | Drive/Path",       "desc": "Post all songs from a Google Drive folder path as threads.", "perm": "owner" },
+      { "name": ",addsong | tag | #forum | Drive/Path", "desc": "Same as above but applies a forum tag to every thread.", "perm": "owner" },
+      { "name": ",addsong help",                        "desc": "Show the full AddSong usage guide.", "perm": "all" }
+    ]
+  },
+  {
+    "group": "Auto Logger",
+    "icon": "🤖",
+    "commands": [
+      { "name": ",autologger on <artist>",  "desc": "Enable automatic Drive sync for an artist. Scans every 5 minutes, creates forums per era, posts songs with MP3 + M4A download buttons.", "perm": "owner", "badge": "auto" },
+      { "name": ",autologger off <artist>", "desc": "Disable automatic syncing for an artist.", "perm": "owner" }
+    ]
+  },
+  {
+    "group": "Artist",
+    "icon": "🎤",
+    "commands": [
+      { "name": ",artist remove <name>", "desc": "Delete an artist's category and all channels inside it. Asks for confirmation first.", "perm": "admin" },
+      { "name": ",artist log <name>",    "desc": "View the artist event log — songs posted, forums created, recent activity.", "perm": "admin" }
+    ]
+  },
+  {
+    "group": "Drive",
+    "icon": "☁️",
+    "commands": [
+      { "name": ",drivesync",      "desc": "Fast scan — indexes Google Drive folder structure and file IDs.", "perm": "owner" },
+      { "name": ",drivesync full", "desc": "Full scan — downloads every file and reads full audio metadata: title, artist, album, year, duration, bitrate, cover art.", "perm": "owner" }
+    ]
+  }
+]
